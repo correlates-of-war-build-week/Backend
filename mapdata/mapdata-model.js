@@ -8,7 +8,7 @@ module.exports = {
 };
 
 function find() {
-  return db('map_data').select('id', 'StateNme');
+  return db('map_data').select('id', 'StateNme', 'stateabb', 'ccode', 'pred_proba');
 }
 
 function findBy(filter) {
@@ -23,7 +23,7 @@ async function add(map_data) {
 
 function findById(id) {
   return db('map_data')
-    .select('id', 'StateNme')
+    .select('id', 'StateNme',)
     .where({ id })
     .first();
 }
