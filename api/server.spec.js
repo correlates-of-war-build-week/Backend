@@ -21,7 +21,7 @@ describe('mapdata', () => {
     it('responds with 200 OK', async () => {
       await supertest(mapdata)
         .get('/')
-        .expect('Content-Type', /json/i);
+        .expect('Content-Type', /text/i);
     });
 
     // using done
@@ -29,12 +29,6 @@ describe('mapdata', () => {
       supertest(mapdata)
         .get('/')
         .expect(200, done);
-    });
-
-    test('the data is its alive', async () => {
-      supertest(mapdata)
-      .get('/')
-      expect(mapdata).toContain('alive');
     });
   });
 });
