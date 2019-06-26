@@ -7,7 +7,7 @@ exports.up = function (knex, Promise) {
             .notNullable()
             .unique();
         map_data
-            .string('stateabb', 128)
+            .string('country', 128)
             .notNullable();
         map_data
             .integer('ccode', 128)
@@ -15,6 +15,30 @@ exports.up = function (knex, Promise) {
         map_data
             .integer('pred_proba', 128)
             .notNullable();
+        map_data
+        .integer('year', 128)
+        .notNullable();
+        map_data
+        .integer('milper', 128)
+        .notNullable();
+        map_data
+        .integer('irst', 128)
+        .notNullable();
+        map_data
+        .integer('tpop', 128)
+        .notNullable();
+        map_data
+        .integer('milex', 128)
+        .notNullable();
+        map_data
+        .integer('exports', 128)
+        .notNullable();
+        map_data
+        .integer('latitude', 128)
+        .notNullable();
+        map_data
+        .integer('longitude', 128)
+        .notNullable();
     });
 };
 
