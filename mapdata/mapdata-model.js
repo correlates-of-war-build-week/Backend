@@ -6,9 +6,25 @@ module.exports = {
   findBy,
   findById,
 };
+        
 
 function find() {
-  return db('map_data').select('id', 'StateNme', 'stateabb', 'ccode', 'pred_proba');
+  return db('map_data')
+    .select(
+      'id', 
+      "ccode",
+      "year",
+      "milper",
+      "irst",
+      "tpop",
+      "milex",
+      "exports",
+      "pred_proba",
+      "StateNme",
+      "country",
+      "latitude",
+      "longitude",
+    );
 }
 
 function findBy(filter) {
