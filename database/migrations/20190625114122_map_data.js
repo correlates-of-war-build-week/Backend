@@ -24,13 +24,13 @@ exports.up = function (knex, Promise) {
             .integer('irst', 128)
             .notNullable();
         map_data
-            .integer('tpop', 128)
+            .decimal('tpop', 128)
             .notNullable();
         map_data
             .integer('milex', 128)
             .notNullable();
         map_data
-            .integer('exports', 128)
+            .decimal('exports', 128)
         map_data
             .decimal('latitude', 128)
         map_data
