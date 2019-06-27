@@ -12,9 +12,9 @@ exports.up = function (knex, Promise) {
         map_data
             .integer('ccode', 128)
             .notNullable();
-        map_data
-            .integer('pred_proba', 128)
-            .notNullable();
+        // map_data
+        //     .integer('pred_proba', 128)
+        //     .notNullable();
     });
 };
 
