@@ -60,20 +60,20 @@ exports.seed = function (knex, Promise) {
                     latitude: 21.521757,
                     longitude: -77.781167
                 },
-                // {
-                //     "ccode": 41,
-                //     "year": 2007,
-                //     "milper": 1,
-                //     "irst": 0,
-                //     "tpop": 9720.0,
-                //     "milex": -9,
-                //     "exports": 618.0623267472,
-                //     "pred_proba": 0.0015293952,
-                //     "StateNme": "Haiti",
-                //     "stateabb": "HT ",
-                //     "latitude": 18.971187,
-                //     "longitude": -72.285215
-                // },
+                {
+                    ccode: 41,
+                    year: 2007,
+                    milper: 1,
+                    irst: 0,
+                    tpop: 9720.0,
+                    milex: -9,
+                    exports: 618.0623267472,
+                    pred_proba: 0.0015293952,
+                    StateNme: "Haiti",
+                    stateabb: "HT ",
+                    latitude: 18.971187,
+                    longitude: -72.285215
+                },
                 // {
                 //     "ccode": 42,
                 //     "year": 2007,
