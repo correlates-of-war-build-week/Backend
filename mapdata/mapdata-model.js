@@ -8,7 +8,7 @@ module.exports = {
 };
 
 function find() {
-  return db('map_data').select('id', 'StateNme', 'stateabb', 'ccode',);
+  return db('map_data').select('id', 'StateNme', 'stateabb', 'ccode', 'pred_proba');
 }
 
 function findBy(filter) {
