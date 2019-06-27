@@ -19,7 +19,7 @@ function find() {
       "tpop",
       "milex",
       "exports",
-      "pred_proba",
+      "predproba",
       "StateNme",
       "country",
       "latitude",
