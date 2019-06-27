@@ -5,10 +5,12 @@ module.exports = {
   find,
   findBy,
   findById,
+  update,
+  remove,
 };
 
 function find() {
-  return db('map_data').select('id', 'StateNme', 'stateabb', 'ccode', 'pred_proba');
+  return db('map_data').select('id', 'StateNme', 'stateabb', 'ccode', 'pred_proba','latitude','longitude');
 }
 
 function findBy(filter) {
@@ -26,4 +28,16 @@ function findById(id) {
     .select('id', 'StateNme',)
     .where({ id })
     .first();
+}
+
+function update(id, changes){
+    return db('map_data')
+    .where({ id })
+    .update(changes, '*');
+}
+
+function remove(id) {
+    return db('map_data')
+    .where({ id })
+    .del();
 }
