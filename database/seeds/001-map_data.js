@@ -5,34 +5,53 @@ exports.seed = function(knex, Promise) {
     .then(function() {
       return knex('map_data').insert([
         {
-            ccode: 2,
-            year: 2007,
-            milper: 1506,
-            irst: 98102,
-            tpop: 301621.0,
-            milex: 552568000,
-            exports: 1162639.5,
-            predproba: 0.006356922,
-            StateNme: "United States of America",
-            country: "US ",
-            latitude: 37.09024,
-            longitude: -95.712891
-        },
-        {
-            ccode: 20,
-            year: 2007,
-            milper: 63,
-            irst: 15572,
-            tpop: 32976.0,
-            milex: 18491000,
-            exports: 420293.1795722466,
-            predproba: 0.0045166817,
-            StateNme: "Canada",
-            country: "CA ",
-            latitude: 56.130366,
-            longitude: -106.346771
-        },
-        
+          StateNme: "United States of America",
+          stateabb: "USA",
+          ccode: 2,
+          pred_proba: 0.3706049009
+      },
+      {
+          StateNme: "Canada",
+          stateabb: "CAN",
+          ccode: 20,
+          pred_proba: 0.0253472574
+      },
+      {
+          StateNme: "Bahamas",
+          stateabb: "BHM",
+          ccode: 31,
+          pred_proba: 0.0198710897
+      },
+      {
+          StateNme: "Cuba",
+          stateabb: "CUB",
+          ccode: 40,
+          pred_proba: 0.0208974815
+      },
+      {
+          StateNme: "Haiti",
+          stateabb: "HAI",
+          ccode: 41,
+          pred_proba: 0.0204586904
+      },
+      {
+          StateNme: "Dominican Republic",
+          stateabb: "DOM",
+          ccode: 42,
+          pred_proba: 0.0209258472
+      },
+      {
+          StateNme: "Jamaica",
+          stateabb: "JAM",
+          ccode: 51,
+          pred_proba: 0.0199728738
+      },
+      {
+          StateNme: "Trinidad and Tobago",
+          stateabb: "TRI",
+          ccode: 52,
+          pred_proba: 0.0198855035
+      },
       ]);
     });
 };
