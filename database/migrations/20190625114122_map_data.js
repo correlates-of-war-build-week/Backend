@@ -16,29 +16,29 @@ exports.up = function (knex, Promise) {
             .integer('pred_proba', 128)
             .notNullable();
         map_data
-        .integer('year', 128)
-        .notNullable();
+            .integer('year', 128)
+            .notNullable();
         map_data
-        .integer('milper', 128)
-        .notNullable();
+            .integer('milper', 128)
+            .notNullable();
         map_data
-        .integer('irst', 128)
-        .notNullable();
+            .integer('irst', 128)
+            .notNullable();
         map_data
-        .integer('tpop', 128)
-        .notNullable();
+            .decimal('tpop', 128)
+            .notNullable();
         map_data
-        .integer('milex', 128)
-        .notNullable();
+            .integer('milex', 128)
+            .notNullable();
         map_data
-        .integer('exports', 128)
-        .notNullable();
+            .decimal('exports', 128)
+            .notNullable();
         map_data
-        .integer('latitude', 128)
-        .notNullable();
+            .decimal('latitude', 128)
+            .notNullable();
         map_data
-        .integer('longitude', 128)
-        .notNullable();
+            .decimal('longitude', 128)
+            .notNullable();
     });
 };
 
