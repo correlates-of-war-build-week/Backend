@@ -46,20 +46,20 @@ exports.seed = function (knex, Promise) {
                     latitude: 25.03428,
                     longitude: -77.39628
                 },
-                // {
-                //     "ccode": 40,
-                //     "year": 2007,
-                //     "milper": 49,
-                //     "irst": 268,
-                //     "tpop": 11238.0,
-                //     "milex": -9,
-                //     "exports": 3413.8458383862,
-                //     "pred_proba": 0.0041358196,
-                //     "StateNme": "Cuba",
-                //     "stateabb": "CU ",
-                //     "latitude": 21.521757,
-                //     "longitude": -77.781167
-                // },
+                {
+                    ccode: 40,
+                    year: 2007,
+                    milper: 49,
+                    irst: 268,
+                    tpop: 11238.0,
+                    milex: -9,
+                    exports: 3413.8458383862,
+                    pred_proba: 0.0041358196,
+                    StateNme: "Cuba",
+                    stateabb: "CU ",
+                    latitude: 21.521757,
+                    longitude: -77.781167
+                },
                 // {
                 //     "ccode": 41,
                 //     "year": 2007,
