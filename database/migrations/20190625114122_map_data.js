@@ -15,6 +15,12 @@ exports.up = function (knex, Promise) {
         map_data
             .string('pred_proba', 128)
             .notNullable();
+        map_data
+            .decimal('latitude', 128)
+            .notNullable();
+        map_data
+            .decimal('longitude', 128)
+            .notNullable();
     });
 };
 
