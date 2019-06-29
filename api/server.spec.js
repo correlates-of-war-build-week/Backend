@@ -18,7 +18,7 @@ describe('mapdata', () => {
     });
 
     // or use the squad async/await
-    it('responds with 200 OK', async () => {
+    it('responds with its alive text', async () => {
       await supertest(mapdata)
         .get('/')
         .expect('Content-Type', /text/i);

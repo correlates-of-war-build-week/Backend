@@ -35,6 +35,14 @@ exports.up = function (knex, Promise) {
             .integer('latitude', 128);
         map_data
             .integer('longitude', 128);
+        //Foreign Key
+            map_data
+            .integer('users_id')
+            .unsigned()
+            .references('id')
+            .inTable('users')
+            .onDelete('CASCADE')
+            .onUpdate('CASCADE');
     });
 };
 
